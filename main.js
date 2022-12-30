@@ -1,94 +1,3 @@
-// var botChoices = ["rock", "paper", "scissors"];
-// var botRandomChoice = botChoices[Math.floor(Math.random() * 3)];
-
-// var rock = document.getElementById("rock");
-// var paper = document.getElementById("paper");
-// var scissors = document.getElementById("scissors");
-// var statuss = document.getElementById("status");
-// var imgsContainer = document.getElementById("imgs-container");
-// var myPick = document.getElementById("myPick");
-// var botPick = document.getElementByelement-nameId("botPick");
-
-// rock.onclick = function () {
-//   // imgsContainer.style.display = "none";
-//   // document.getElementById("results").style.display = "flex";
-//   botPick.style.transform = "scaleX(-1)";
-//   // myPick.setAttribute("src", "imgs/Rock.png");
-//   myPick.style.width = "24rem";
-
-//   /**********/
-//   if (botRandomChoice == "paper") {
-//     statuss.innerHTML = "YOU LOST!";
-//     // botPick.setAttribute("src", "imgs/paper.png");
-//     // botPick.style.width = "16.6rem";
-
-//     scissors.style.display = "none";
-//     document.getElementById("test").style.display = "none";
-//     document.getElementById("scissorsName").style.display = "none";
-//     imgsContainer.style.gridTemplateColumns = "1fr 1fr";
-//     /**********/
-//   } else if (botRandomChoice == "scissors") {
-//     statuss.innerHTML = "YOU WON!";
-//     botPick.setAttribute("src", "imgs/scissors.png");
-//     botPick.style.width = "20rem";
-//     /**********/
-//   } else {
-//     statuss.innerHTML = "YOU TIED!";
-//     botPick.setAttribute("src", "imgs/Rock.png");
-//     botPick.style.width = "24rem";
-//   }
-// };
-
-// paper.onclick = function () {
-//   imgsContainer.style.display = "none";
-//   document.getElementById("results").style.display = "flex";
-//   botPick.style.transform = "scaleX(-1)";
-//   myPick.setAttribute("src", "imgs/paper.png");
-//   myPick.style.width = "16.6rem";
-
-//   /**********/
-//   if (botRandomChoice == "scissors") {
-//     statuss.innerHTML = "YOU LOST!";
-//     botPick.setAttribute("src", "imgs/scissors.png");
-//     botPick.style.width = "20rem";
-//     /**********/
-//   } else if (botRandomChoice == "rock") {
-//     statuss.innerHTML = "YOU WON!";
-//     botPick.setAttribute("src", "imgs/Rock.png");
-//     botPick.style.width = "24rem";
-//     /**********/
-//   } else {
-//     statuss.innerHTML = "YOU TIED!";
-//     botPick.setAttribute("src", "imgs/paper.png");
-//     botPick.style.width = "16.6rem";
-//   }
-// };
-
-// scissors.onclick = function () {
-//   imgsContainer.style.display = "none";
-//   document.getElementById("results").style.display = "flex";
-//   botPick.style.transform = "scaleX(-1)";
-//   myPick.setAttribute("src", "imgs/scissors.png");
-//   myPick.style.width = "20rem";
-//   /**********/
-//   if (botRandomChoice == "rock") {
-//     statuss.innerHTML = "YOU LOST!";
-//     botPick.setAttribute("src", "imgs/Rock.png");
-//     botPick.style.width = "24rem";
-//     /**********/
-//   } else if (botRandomChoice == "paper") {
-//     statuss.innerHTML = "YOU WON!";
-//     botPick.setAttribute("src", "imgs/paper.png");
-//     botPick.style.width = "16.6rem";
-
-//     /**********/
-//   } else {
-//     statuss.innerHTML = "YOU TIED!";
-//     botPick.setAttribute("src", "imgs/scissors.png");
-//     botPick.style.width = "20rem";
-//   }
-// };
-
 const rpcGame = () => {
   const rock = document.querySelector(".rock");
   const paper = document.querySelector(".paper");
@@ -108,8 +17,8 @@ const rpcGame = () => {
     choice.addEventListener("click", function () {
       conditions(this.id, botRandomPick);
       imgsContainer.style.display = "none";
-      myPic.src = `imgs/${this.id}.png`;
-      botPic.src = `imgs/${botRandomPick}.png`;
+      myPic.src = `${this.id}.png`;
+      botPic.src = `${botRandomPick}.png`;
       myPickName.innerHTML = this.id;
       botPickName.innerHTML = botRandomPick;
 
