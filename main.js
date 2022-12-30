@@ -17,7 +17,7 @@ const rpcGame = () => {
     choice.addEventListener("click", function () {
       conditions(this.id, botRandomPick);
       imgsContainer.style.display = "none";
-      myPic.src = `${this.id}.png`;
+      myPic.src = `/${this.id}.png`;
       botPic.src = `${botRandomPick}.png`;
       myPickName.innerHTML = this.id;
       botPickName.innerHTML = botRandomPick;
