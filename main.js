@@ -17,14 +17,14 @@ const rpcGame = () => {
     choice.addEventListener("click", function () {
       conditions(this.id, botRandomPick);
       imgsContainer.style.display = "none";
-      myPic.src = `${this.id}.png`;
+      myPic.src = this.id + ".png";
       botPic.src = `${botRandomPick}.png`;
       myPickName.innerHTML = this.id;
       botPickName.innerHTML = botRandomPick;
 
       const myPickContainer = document.querySelector(".myPickContainer");
       const botPickContainer = document.querySelector(".botPickContainer");
-      /**********MEDIA QUERY FOR MOBILE DEVICES**********/
+      /**********MEDIA QUERY + ANIMATION FOR MOBILE DEVICES**********/
       function myFunction(mediaQ) {
         if (mediaQ.matches) {
           myPickContainer.style.gap = "5px";
