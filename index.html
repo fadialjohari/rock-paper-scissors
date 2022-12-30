@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>RPC</title>
+  </head>
+  <body id="body">
+    <section class="main-section">
+      <h1 class="header" id="status">Choose:</h1>
+      <div class="imgs-container" id="imgs-container">
+        <div class="rock-container all-elements">
+          <img class="rock" id="rock" src="imgs/rock.png  " alt="" />
+          <h3 class="element-name rockName">Rock</h3>
+        </div>
+
+        <div class="paper-container all-elements">
+          <img class="paper" id="paper" src="imgs/paper.png" alt="" />
+          <h3 class="element-name paperName">Paper</h3>
+        </div>
+
+        <div class="scissors-container all-elements">
+          <img class="scissors" id="scissors" src="imgs/scissors.png" alt="" />
+          <h3 class="element-name scissorsName">Scissors</h3>
+        </div>
+      </div>
+
+      <div id="results">
+        <div class="myPickContainer">
+          <img id="test1" src="" alt="" />
+          <h3 style="text-transform: capitalize" id="myPickName"></h3>
+        </div>
+        <div class="botPickContainer">
+          <img id="test2" src="" alt="" />
+          <h3 style="text-transform: capitalize" id="botPickName"></h3>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
